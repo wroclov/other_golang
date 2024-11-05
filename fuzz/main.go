@@ -6,6 +6,9 @@ import (
     "unicode/utf8"
 )
 
+
+/* rune an integer that represents a Unicode code point */
+
 func Reverse(s string) (string, error) {
 	if !utf8.ValidString(s) {
 		return s, errors.New("input is not valid UTF-8")
